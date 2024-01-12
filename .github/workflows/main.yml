@@ -23,6 +23,6 @@ jobs:
         uses: cypress-io/github-action@v6.5.0
         with:
           browser: chrome
-          start: npm start
+          start: npm run test
         env:
           CYPRESS_BASE_URL: ${{ env.SERVER_URL }}
