@@ -11,6 +11,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Set up environment variable
         run: echo "export SERVER_URL=127:0.0.1.8080" >> $GITHUB_ENV
       - name: Cypress.io 
