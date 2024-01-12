@@ -18,7 +18,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Set up environment variable
-        run: echo "export SERVER_URL=http://localhost:8080" >> $GITHUB_ENV
+        run: echo "export SERVER_URL=127:0.0.1.8080" >> $GITHUB_ENV
       - name: Cypress.io 
         uses: cypress-io/github-action@v6.5.0
         with:
